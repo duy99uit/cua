@@ -21,9 +21,9 @@ class _CuaGach extends Cua {
     super(price);
   }
   total(count: number): number {
-    var a = Math.floor(count / 3);
+   var a = Math.floor(count / 3);
     var b = count - a * 3;
-    return this.getPrice() * (a + b);
+    return this.getPrice() * (a)*2 + this.getPrice()*b;
   }
 }
 class _CuaThit extends Cua {
